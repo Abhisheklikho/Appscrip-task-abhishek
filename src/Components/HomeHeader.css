@@ -1,0 +1,215 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+font-family: 'Simplon Norm', sans-serif;
+}
+
+.HomeHeader {
+    
+    /* background-color: rgb(164, 241, 88); */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 6rem;
+   width: 100%;
+   border-bottom: 1px solid #E5E5E5;
+}
+.HeaderLogo{
+    /* background-color: blueviolet; */
+display: flex;
+    justify-content: space-around;
+   align-items: center;
+
+}
+.ImgWithHumburgar{
+    display: flex;
+align-items: center;
+gap: .5rem;
+}
+.HeaderLogo span{
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+margin-left: 10%;
+
+}
+.HeaderIcons{
+    display: flex;
+    align-items: center;
+gap: 1.2rem;
+/* margin-left: 1.5rem; */
+cursor:pointer;
+
+}
+#language{
+  
+   width: 3.2rem;
+   border: unset;
+   outline: unset;
+   
+}
+.HeaderTabs,ul{
+    /* background-color: sienna; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HeaderTabs ul{
+    list-style: none;
+    gap: 3rem;
+}
+/* Header Description  */
+
+.Description{
+    /* background-color: blueviolet; */
+    height: auto;
+  width: 100%;
+  margin: auto;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   justify-content: center;
+overflow: hidden;
+}
+.Description .home-shop{
+    display: none;
+}
+.Description h1{
+text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 16rem 0rem 16rem;
+}
+.Description h2 {
+text-align: center;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 1rem 16rem 1rem 16rem;
+    color: #252020;
+}
+
+
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .HomeHeader {
+        height: auto;
+      
+        /* Adjust height as needed for small screens */
+    }
+
+        .HeaderLogo img {
+            width: 30px;
+            /* Adjust the width for smaller screens */
+            height: auto;
+            padding: .5rem 1.2rem .5rem 1.2rem;
+        }
+    .HeaderLogo span {
+        margin-left: 0;
+        /* Remove margin on smaller screens */
+    }
+
+    .HeaderTabs ul {
+        gap: 1rem;
+        /* Adjust gap for smaller screens */
+    }
+    .HeaderTabs{
+        padding: .3rem 1rem .3rem 1rem;
+    }
+
+    .Description h1 {
+        font-size: 1.5rem;
+    padding: 1rem 4.2rem 1rem 4.2rem;
+    }
+
+    .Description h2 {
+        font-size: 1rem;
+        padding: 1rem 4.2rem 1rem 4.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .HomeHeader{
+        padding: 0rem;
+
+    }
+    .HeaderLogo img{
+      
+                width: 28px;
+                /* Adjust the width for smaller screens */
+                height: auto;
+            padding: 0px;
+    }
+    .HeaderIcons{
+        gap: .4rem;
+    }
+    .HeaderIcons #language ,#user{
+        display: none;
+    }
+    .HeaderTabs ul {
+        
+        gap: 0.5rem;
+        /* Further adjust gap for even smaller screens */
+        display: none;
+    }
+
+        .Description .home-shop {
+
+            display: block;
+            display: flex;
+          padding: 1.8rem 1.8rem 1rem 1.8rem;
+          cursor: pointer;
+        }
+                .Description #home{
+                    color: #BFC8CD;
+                    padding-right: 6px;
+                }
+
+    .Description h1 {
+        font-size: 1.2rem;
+        padding: 1rem .6rem .6rem 0rem;
+        
+    }
+
+    .Description h2 {
+
+        font-size: 1rem;
+        padding: .6rem;
+        font-weight: 200;
+    }
+
+    
+.HamburgerMenu {
+    display: block;
+        cursor: pointer;
+        padding: 10px 0px 10px 10px;
+        background-color: transparent;
+        border: none;
+    
+  
+}
+
+
+.Bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.HamburgerMenu.active .Bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.HamburgerMenu.active .Bar:nth-child(2) {
+    opacity: 0;
+}
+
+.HamburgerMenu.active .Bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+}

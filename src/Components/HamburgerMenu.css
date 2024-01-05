@@ -1,0 +1,25 @@
+/* HamburgerMenu.css */
+.HamburgerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.Bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Styling for open state */
+.HamburgerMenu.open .Bar:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.HamburgerMenu.open .Bar:nth-child(2) {
+    opacity: 0;
+}
+
+.HamburgerMenu.open .Bar:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
